@@ -1,3 +1,5 @@
 # paint-grid
 
-Try the game (on this webpage)[https://jchu10.github.io/paint-grid]
+Work in progress. 
+
+Try the game on https://jchu10.github.io/paint-grid
