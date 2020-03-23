@@ -1,0 +1,90 @@
+:root {
+  --pixel-size: 40px;
+  --grid-size: 6;
+}
+
+body{
+	padding: 20px;
+}
+
+/* Page layout */
+#container{
+	width: 500px;
+	display: grid;
+	grid-template-columns: 100px auto 200px;
+	grid-gap: 20px;
+	grid-template-areas: 
+     "a a"
+     "c d"
+     "e f"
+     "h h";
+}
+#trialprompt{
+	grid-area: a;
+}
+#palette {
+	grid-area: c;
+}
+#button-subcontainer{
+	grid-area: f;
+}
+#gallery-subcontainer{
+	grid-area: h;
+	position:relative;
+}
+
+/* Drawing Board Settings */
+.board {
+	border: 2px solid black; 
+	border-collapse: collapse;
+	grid-area: d;
+}
+.row {
+	display: table-row;
+}
+.pixel {
+	display: table-cell;
+	background-color: white;
+	width: calc(var(--pixel-size) - 1px);
+	height: calc(var(--pixel-size) - 1px);
+	border: 1px solid black;
+}
+.pen {
+	display: inline-block;
+	width: var(--pixel-size);
+	height: var(--pixel-size);
+	border: 2px solid black;
+}
+/* Gallery Settings */
+#gallery{
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: scroll;
+	border: 1px solid black;
+	padding: 5px;
+}
+
+.card {
+	flex: 0 0 auto;
+	text-align: center;
+	overflow-wrap: break-word;
+	margin: 5px;
+}
+
+.card img {
+	width: 40px;
+	margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
